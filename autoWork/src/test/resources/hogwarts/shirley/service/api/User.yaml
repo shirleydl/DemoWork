@@ -1,0 +1,23 @@
+methods:
+  getDepartmentUsers:
+    query:
+      department_id: ${department_id}
+    method: get
+    url: https://qyapi.weixin.qq.com/cgi-bin/user/simplelist
+  delUsers:
+    postBody:
+      useridlist: ${useridlist}
+    method: post
+    url: https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete
+  get:
+    query:
+      userid: ${userid}
+    method: get
+    url: https://qyapi.weixin.qq.com/cgi-bin/user/get
+  create:
+    postBody:
+      userid: ${userid}
+      name: ${name}
+      department: ${department}
+    method: post
+    url: https://qyapi.weixin.qq.com/cgi-bin/user/create

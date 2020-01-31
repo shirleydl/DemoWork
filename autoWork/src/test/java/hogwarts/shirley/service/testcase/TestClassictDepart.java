@@ -1,7 +1,6 @@
 package hogwarts.shirley.service.testcase;
 
 import hogwarts.shirley.service.Work;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
